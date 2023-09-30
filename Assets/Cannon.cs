@@ -4,21 +4,24 @@ using UnityEngine;
 
 public class Cannon : MonoBehaviour
 {
+    public Collect collect;
     public float FireForce;
     public GameObject Ball;
     public Transform Firepoint;
+    public int Score;
     // Start is called before the first frame update
     void Start()
     {
-        
+        Fire();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetButtonDown("Fire1"))
+        if(collect.BallScore == Score + 1)
         {
             Fire();
+            Score++;
         }
     }
     public void Fire()
