@@ -8,6 +8,7 @@ public class HighScore : MonoBehaviour
     public Collect collect;
     public TMP_Text point;
     public int hs;
+    public int shs;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,8 @@ public class HighScore : MonoBehaviour
         {
             hs = collect.BallScore;
             point.text = "Highscore: " + hs.ToString();
+            PlayerPrefs.SetInt("shs", hs);
+            PlayerPrefs.Save();
         }
     }
 }
