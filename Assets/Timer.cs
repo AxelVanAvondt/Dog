@@ -21,13 +21,17 @@ public class Timer : MonoBehaviour
     void Update()
     {
         seconds -= 1 * Time.deltaTime;
-        timer.text = seconds.ToString("0");
-        if(collect.BallScore > Pearl)
+        if (collect.BallScore > Pearl)
         {
             seconds = 5f;
             Pearl++;
         }
         if(seconds <= 0)
+        {
+            SceneManager.LoadScene("Amethyst");
+        }
+        timer.text = seconds.ToString("0");
+        if (Input.GetButtonDown("Fire3"))
         {
             SceneManager.LoadScene("Amethyst");
         }
