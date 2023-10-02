@@ -35,5 +35,9 @@ public class Timer : MonoBehaviour
         {
             SceneManager.LoadScene("Amethyst");
         }
+        if (collect.BallScore >= 50)
+        {
+            SceneManager.LoadScene("Pink_Diamond");
+        }
     }
 }

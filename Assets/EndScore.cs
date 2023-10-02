@@ -5,8 +5,8 @@ using TMPro;
 
 public class EndScore : MonoBehaviour
 {
-    //public Collect collect;
-    //public TMP_Text End;
+    public Collect collect;
+    public TMP_Text End;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +16,6 @@ public class EndScore : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //End.text = "Score: " + collect.BallScore.ToString();
+        End.text = "Score: " + collect.BallScore.ToString();
     }
 }
