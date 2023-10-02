@@ -24,8 +24,4 @@ public class Collect : MonoBehaviour
     {
         
     }
-    void Awake()
-    {
-        DontDestroyOnLoad(this);
-    }
 }

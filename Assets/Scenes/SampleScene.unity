@@ -1591,7 +1591,7 @@ GameObject:
   - component: {fileID: 26784931}
   - component: {fileID: 1687134290}
   m_Layer: 0
-  m_Name: Dog
+  m_Name: Pumpkin
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

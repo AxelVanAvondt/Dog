@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class EndScore : MonoBehaviour
+public class Spots_On : MonoBehaviour
 {
-    public TMP_Text End;
+    public TMP_Text HAAAA;
     int Tikki;
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -20,7 +20,7 @@ public class EndScore : MonoBehaviour
     }
     void Plagg()
     {
-        Tikki = PlayerPrefs.GetInt("shs", 0);
-        End.text = "HighScore: " + Tikki.ToString();
+        Tikki = PlayerPrefs.GetInt("Claws_Out", 0);
+        HAAAA.text = "Score: " + Tikki.ToString();
     }
 }
